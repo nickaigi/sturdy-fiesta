@@ -1,11 +1,12 @@
 class Node(object):
-    def __init__(self, data=None, next=None):
+    def __init__(self, data=None):
         self.data = data
-        self.next = next
+        self.next = None
+
 
 class LinkedList(object):
-    def __init__(self):
-        self.head = None
+    def __init__(self, head=None):
+        self.head = head
 
     def __repr__(self):
         node = self.head
